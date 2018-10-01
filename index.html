@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+
+</head>
+<body>
+    
+
+    <h1>HTML5 Video Editor and Photo SlideShow Creator</h1>
+    
+    <p>Select some photos, set some options, and watch how a video is generated using your images as a slideshow. Check out
+        the source to see how it works. <a href="http://techslides.com/convert-images-to-video-with-javascript/">Back to
+            Article</a></p><br>
+    
+    <span id="status">Select some images.</span><br><br>
+    
+    <!--this is the template where you can add multiple buttons for each pic-->
+    <div id="drag">DROP!
+            <!--create multple inputs generator-->
+            
+            <input type="text" id="gen">
+            <button id="subIn">submit the number of image inputs you need</button>
+            <div id="submitNum"></div>
+            <!--template ends here-->
+        <div id="small">
+            <div><label>Width:</label><input id="width" type="number" step="1" value="500"></div>
+            <div><label>Height:</label><input id="height" type="number" step="1" value="300"></div>
+            <div><label>Video Frame Rate:</label><input id="framerate" type="number" step="1" value="15"></div>
+        </div>
+        <button id="createvideo">Create Video</button>
+    </div>
+
+
+    <br>
+    <video id="awesome" controls autoplay loop></video>
+    <br>
+    
+    <a style="display:none" id="download" download="video.webm">Download WebM</a>
+    
+    <canvas id="canvas" style="display:none"></canvas>
+
+    
+    
+
+        
+    
+    <script src="./whamy.js"></script>
+    <script src="index.js"></script>
+    <!--<script src="./videoConverter.js"></script>
+    <script src="whammy.js"></script>-->
+</body>
+</html>
